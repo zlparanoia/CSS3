@@ -1,0 +1,118 @@
+* {
+	margin:  0 auto;
+	padding: 0px;
+}
+
+.radius {
+	border-radius: 25px;
+	border: 1px solid #000;
+	width: 150px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	background-color: #4FCDE8;
+}
+
+.shadow {
+	width: 200px;
+	height: 150px;
+	background-color: #F8FD22;
+	box-shadow: 10px 5px 5px #000;
+}
+
+.origin {
+	width: 100px;
+	height: 50px;
+	background-color: red;
+	border: 10px solid #000;
+	padding: 50px;
+	background-clip: content-box; 
+}
+
+.linear {
+	width: 400px;
+	height: 200px;
+	background: repeating-linear-gradient(red, yellow 10%, blue 20%);
+}
+
+.radial {
+	width: 400px;
+	height: 200px;
+	background: repeating-radial-gradient(red, yellow 10%, blue 20%); 
+}
+
+.tshadow {
+	text-shadow: 1px 1px 1px red;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.translate {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	-webkit-transform: translate(50px, 100px);
+	        transform: translate(50px, 100px);
+	-webkit-transform: rotate(30deg);
+	        transform: rotate(30deg);
+	
+}
+
+.transition {
+	width: 100px;
+	height: 100px;
+	color: #fff;
+	background-color: #D7F8C0;
+	transition: all 2s linear;
+}
+
+.transition:hover {
+	width: 200px;
+	height: 200px;
+	background-color: #1AD5D9;
+	-webkit-transform: rotate(360deg);
+	        transform: rotate(360deg);
+}
+
+.animation {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	-webkit-animation: myfirst 5s linear ;
+	        animation: myfirst 5s;
+}
+
+@-webkit-keyframes myfirst {
+	0% {background: red; top: 0; left: 0;}
+	20% {background: green; top: 0; left: 100px;}
+	40% {background: blue; top: 50px; left: 100px;}
+	80% {background: #FBA26C; top: 50px; left: 0;}
+	100% {background: yellow; top: 0; left: 0;}
+}
+
+@keyframes myfirst {
+	0% {background: red; top: 0; left: 0;}
+	20% {background: green; left: 200px; top: 0;}
+	40% {background: blue; top: 50px; left: 100px;}
+	80% {background: #FBA26C; top: 50px; left: 0;}
+	100% {background: yellow; top: 0; left: 0;}
+}
+
+.able {
+	resize: both;
+	overflow: auto;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+}
+
+.box {
+	box-sizing: padding-box;
+	border: 10px solid #000;
+	width: 100px;
+	height: 100px;
+	padding: 20px;
+	background-color: red;
+}
+
