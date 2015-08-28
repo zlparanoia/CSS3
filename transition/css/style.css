@@ -172,8 +172,8 @@ a {
 #st-control-3:checked ~ .st-scroll #st-panel-3 h2,
 #st-control-4:checked ~ .st-scroll #st-panel-4 h2,
 #st-control-5:checked ~ .st-scroll #st-panel-5 h2 {
-	-webkit-animation: moveDown 0.6s ease-in-out 0.5s backwards;
-	        animation: moveDown 0.6s ease-in-out 0.5s backwards;
+	-webkit-animation: moveDown 0.6s ease-in-out 0.5s;
+	        animation: moveDown 0.6s ease-in-out 0.5s;
 }
 @-webkit-keyframes moveDown {
 	0%{
@@ -216,8 +216,8 @@ a {
 #st-control-3:checked ~ .st-scroll #st-panel-3 p,
 #st-control-4:checked ~ .st-scroll #st-panel-4 p,
 #st-control-5:checked ~ .st-scroll #st-panel-5 p {
-	-webkit-animation: moveUp 0.6s ease-in-out 0.5s backwards;
-	        animation: moveUp 0.6s ease-in-out 0.5s backwards;
+	-webkit-animation: moveUp 0.6s ease-in-out 0.5s;
+	        animation: moveUp 0.6s ease-in-out 0.5s;
 }
 @-webkit-keyframes moveUp {
 	0%{
@@ -296,5 +296,11 @@ a {
 		-webkit-transform: rotate(-45deg) translateY(15%);
 	        	transform: rotate(-45deg) translateY(15%);
 	}
+}
+
+.canvas {
+	position: absolute;
+	right: 60px;
+	top: 30px;
 }
 
